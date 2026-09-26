@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400&family=Archivo:wght@400;500;600&family=Archivo+Narrow&display=swap');
+
+:root {
+  /* base */
+  --creme:        #f2e4c9; /* fundo dos cards e do hero */
+  --creme-fundo:  #efe0bf; /* fundo geral da página */
+  --areia:        #e2cfa5; /* faixa de busca/filtros */
+
+  /* marca */
+  --bordo:        #6d1023; /* navbar, títulos, botões primários, faixa de dica */
+  --vermelho:     #a71d2d; /* item ativo do menu */
+  --mostarda:     #e0a527; /* logo "Gula", CTA "Ir para os doces", ilustrações */
+  --areia-escura: #c5a985;
+
+  /* escuros */
+  --cafe:         #2e1a11; /* topbar, footer, texto corrido */
+
+  /* terrosos (fundos das fotos/ilustrações) */
+  --ferrugem:     #8f3a25; /* também usado no texto de metadados */
+  --telha:        #7a2c1f;
+  --castanho:     #5b2b14;
+
+  --font-display: 'Bodoni Moda', 'Didot', Georgia, serif;
+  --font-body:    'Archivo', system-ui, sans-serif;
+  --font-meta:    'Archivo Narrow', 'Archivo', sans-serif;
+}
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cafe);
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    color: var(--areia-escura);
+    font-family: var(--font-meta);
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--mostarda);
+    font-family: var(--font-display);
+}
