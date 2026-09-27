@@ -60,12 +60,12 @@ main#conteudo {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.9rem;
-  color: var(--gula-cream);
+  color: var(--gula-gold);
   letter-spacing: 0.03em;
 }
 
 .navbar-gula .navbar-brand:hover {
-  color: var(--gula-gold);
+  color: var(--gula-cream);
 }
 
 .navbar-gula .nav-link {
@@ -121,7 +121,7 @@ main#conteudo {
 /* ---------- área de conteúdo (placeholder) ---------- */
 .content-placeholder {
   color: #7c6a58;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .cta {
@@ -174,7 +174,7 @@ main#conteudo {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.4rem;
-  color: var(--gula-cream);
+  color: var(--gula-gold);
 }
 
 .footer-gula .footer-text {
@@ -186,6 +186,61 @@ main#conteudo {
 h1, h2, h3, .titulo-secao {
   font-family: var(--font-display);
   color: var(--gula-maroon);
+}
+
+/* ---------- barra de filtro ---------- */
+.filter-bar {
+  background-color: var(--gula-cream-2);
+  border-bottom: 1px solid var(--gula-maroon-hi);
+  padding: 1rem;
+}
+
+.filter-search {
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.filter-search .form-control:focus {
+  border-color: var(--gula-maroon-hi);
+  box-shadow: 0 0 0 0.2rem rgba(168, 57, 74, 0.25);
+}
+
+.btn-filter {
+  background-color: var(--gula-maroon);
+  color: var(--gula-cream);
+  font-weight: 600;
+}
+
+.btn-filter:hover {
+  background-color: var(--gula-maroon-hi);
+  color: var(--gula-cream);
+}
+
+.filter-label {
+  font-weight: 600;
+  color: var(--gula-ink);
+  font-size: 0.9rem;
+}
+
+.filter-chip {
+  background-color: transparent;
+  border: 1px solid var(--gula-maroon-hi);
+  color: var(--gula-maroon);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.filter-chip:hover {
+  background-color: var(--gula-cream-2);
+}
+
+.filter-chip.is-active {
+  background-color: var(--gula-maroon);
+  color: var(--gula-cream);
+  border-color: var(--gula-maroon);
 }
 
 /* ---------- card de receita ---------- */
@@ -217,8 +272,4 @@ h1, h2, h3, .titulo-secao {
   font-family: var(--font-display);
   font-weight: 700;
   color: var(--gula-maroon);
-}
-
-.recipe-card--salgado {
-  --card-accent: #8f3a25;
 }
