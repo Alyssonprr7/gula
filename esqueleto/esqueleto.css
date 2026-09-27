@@ -1,0 +1,189 @@
+/* ==========================================================================
+   GULA — Revista digital de receitas
+   Estilos comuns do esqueleto: paleta, tipografia, navbar, rodapé.
+   Sem gradientes, cores planas, conforme o design aprovado.
+   ========================================================================== */
+
+:root {
+  /* paleta */
+  --gula-dark:      #201209;  /* barra superior e rodapé */
+  --gula-maroon:    #8a2332;  /* navbar */
+  --gula-maroon-hi: #a8394a;  /* hover / detalhes sobre o maroon */
+  --gula-cream:     #f6ecd8;  /* fundo das páginas */
+  --gula-cream-2:   #efe1c4;  /* fundo alternativo (cards, blocos) */
+  --gula-ink:       #2a170f;  /* texto sobre fundo claro */
+  --gula-paper:     #f6ecd8;  /* texto sobre fundo escuro */
+  --cafe:           #2e1a11; /* topbar, footer, texto corrido */
+  --mostarda:       #e0a527;
+
+  /* tipografia */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gula-ink);
+  background-color: var(--gula-cream);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* faz o conteúdo empurrar o rodapé para o fim da página mesmo quando curto */
+main#conteudo {
+  flex: 1 0 auto;
+}
+
+/* ---------- barra utilitária superior ---------- */
+.topbar {
+  background-color: var(--gula-dark);
+  color: var(--gula-cream-2);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 0;
+}
+
+/* ---------- navbar principal ---------- */
+.navbar-gula {
+  background-color: var(--gula-maroon);
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 3px solid var(--gula-maroon-hi);
+}
+
+.navbar-gula .navbar-brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--gula-cream);
+  letter-spacing: 0.03em;
+}
+
+.navbar-gula .navbar-brand:hover {
+  color: var(--gula-gold);
+}
+
+.navbar-gula .nav-link {
+  color: var(--gula-cream-2);
+  font-weight: 500;
+  margin-inline: 0.35rem;
+  padding-inline: 0.5rem;
+}
+
+.navbar-gula .nav-link:hover,
+.navbar-gula .nav-link:focus,
+.navbar-gula .nav-link.active {
+  color: var(--mostarda);
+}
+
+.navbar-gula .navbar-text.page-context {
+  color: var(--mostarda);
+  font-size: 0.85rem;
+}
+
+/* ícone do menu hambúrguer em tom claro, sem sombras */
+.navbar-gula .navbar-toggler {
+  border-color: rgba(246, 236, 216, 0.4);
+}
+
+.navbar-gula .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(223, 167, 60, 0.4);
+}
+
+.navbar-gula .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f6ecd8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* dropdown "Receitas" */
+.navbar-gula .dropdown-menu {
+  background-color: var(--gula-maroon);
+  border: 1px solid var(--gula-maroon-hi);
+  border-radius: 0;
+  margin-top: 0.4rem;
+}
+
+.navbar-gula .dropdown-item {
+  color: var(--gula-cream-2);
+  font-weight: 500;
+}
+
+.navbar-gula .dropdown-item:hover,
+.navbar-gula .dropdown-item:focus {
+  background-color: var(--gula-maroon-hi);
+  color: var(--gula-paper);
+}
+
+/* ---------- área de conteúdo (placeholder) ---------- */
+.content-placeholder {
+  color: #7c6a58;
+  font-style: italic;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gula-maroon);
+    border-radius: 6px;
+    color: #fff;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+}
+
+.btn-cta {
+    background-color: var(--mostarda);
+    color: var(--cafe);
+    font-weight: 600;
+}
+
+.btn-cta:hover {
+    background-color: var(--mostarda);
+    color: var(--cafe);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 900px) {
+    .cta-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+/* ---------- rodapé ---------- */
+.footer-gula {
+  flex-shrink: 0;
+  background-color: var(--gula-dark);
+  color: var(--gula-cream-2);
+}
+
+.footer-gula .footer-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--gula-cream);
+}
+
+.footer-gula .footer-text {
+  font-size: 0.85rem;
+  color: var(--gula-cream-2);
+}
+
+/* ---------- tipografia de títulos, para uso das páginas de conteúdo ---------- */
+h1, h2, h3, .titulo-secao {
+  font-family: var(--font-display);
+  color: var(--gula-maroon);
+}
