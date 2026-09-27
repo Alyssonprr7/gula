@@ -13,8 +13,8 @@
   --gula-cream-2:   #efe1c4;  /* fundo alternativo (cards, blocos) */
   --gula-ink:       #2a170f;  /* texto sobre fundo claro */
   --gula-paper:     #f6ecd8;  /* texto sobre fundo escuro */
-  --cafe:           #2e1a11; /* topbar, footer, texto corrido */
-  --mostarda:       #e0a527;
+  --cafe:           #2e1a11; /* texto escuro sobre fundo dourado (botões) */
+  --gula-gold:      #e0a527; /* acento (botões, links de destaque, hover da navbar) */
 
   /* tipografia */
   --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -78,11 +78,11 @@ main#conteudo {
 .navbar-gula .nav-link:hover,
 .navbar-gula .nav-link:focus,
 .navbar-gula .nav-link.active {
-  color: var(--mostarda);
+  color: var(--gula-gold);
 }
 
 .navbar-gula .navbar-text.page-context {
-  color: var(--mostarda);
+  color: var(--gula-gold);
   font-size: 0.85rem;
 }
 
@@ -138,13 +138,13 @@ main#conteudo {
 }
 
 .btn-cta {
-    background-color: var(--mostarda);
+    background-color: var(--gula-gold);
     color: var(--cafe);
     font-weight: 600;
 }
 
 .btn-cta:hover {
-    background-color: var(--mostarda);
+    background-color: var(--gula-gold);
     color: var(--cafe);
     filter: brightness(1.1);
 }
@@ -186,4 +186,39 @@ main#conteudo {
 h1, h2, h3, .titulo-secao {
   font-family: var(--font-display);
   color: var(--gula-maroon);
+}
+
+/* ---------- card de receita ---------- */
+.recipe-card {
+  --card-accent: var(--gula-maroon-hi);
+  background-color: var(--gula-cream-2);
+  border: 1px solid var(--gula-maroon-hi);
+  color: var(--gula-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+  box-shadow: 0 5px 10px rgba(32, 18, 9, 0.25);
+}
+
+.recipe-card-img {
+  height: 180px;
+  background-color: var(--card-accent);
+}
+
+.recipe-card-meta {
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--card-accent);
+}
+
+.recipe-card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--gula-maroon);
+}
+
+.recipe-card--salgado {
+  --card-accent: #8f3a25;
 }
