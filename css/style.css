@@ -1,0 +1,216 @@
+/* ---------- título da capa ---------- */
+.capa-masthead {
+  padding: 2.5rem 1rem 2rem;
+}
+
+.capa-kicker {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--gula-maroon-hi);
+}
+
+.capa-masthead .capa-kicker {
+  margin-bottom: 0;
+}
+
+.capa-titulo {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: 1;
+  color: var(--gula-maroon);
+}
+
+.capa-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  font-family: var(--font-display);
+  color: var(--gula-maroon-hi);
+}
+
+.capa-tagline::before,
+.capa-tagline::after {
+  content: "";
+  flex: 0 1 160px;
+  border-top: 1px solid var(--gula-maroon-hi);
+}
+
+/* ---------- prato de capa ---------- */
+.capa-foto {
+  position: relative;
+  min-height: 380px;
+  background-color: #8e3a24;
+  border: 1px solid var(--gula-ink);
+}
+
+.capa-selo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--gula-gold);
+  color: var(--cafe);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.capa-legenda {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.35rem 0.75rem;
+  background-color: var(--gula-cream);
+  border-top: 1px solid var(--gula-ink);
+  border-right: 1px solid var(--gula-ink);
+  font-size: 0.75rem;
+}
+
+.capa-hero h1 {
+  font-weight: 700;
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  line-height: 1.05;
+}
+
+.capa-lead {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--gula-maroon);
+}
+
+.capa-meta {
+  border-top: 1px solid var(--gula-maroon-hi);
+  border-bottom: 1px solid var(--gula-maroon-hi);
+}
+
+.capa-meta-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.capa-meta-valor {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.btn-capa {
+  background-color: var(--gula-maroon);
+  color: var(--gula-cream);
+  border-radius: 0;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 5px 5px 0 var(--gula-gold);
+}
+
+.btn-capa:hover {
+  background-color: var(--gula-maroon-hi);
+  color: var(--gula-cream);
+}
+
+.capa-regua {
+  margin: 0 0 1.5rem;
+  border: 0;
+  border-top: 2px solid var(--gula-maroon);
+  opacity: 1;
+}
+
+.capa-secao-titulo {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+.capa-nota {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--gula-maroon-hi);
+}
+
+.capa-cards .recipe-card {
+  border-color: var(--gula-ink);
+  border-radius: 0;
+}
+
+.capa-cards .recipe-card-img {
+  position: relative;
+}
+
+.capa-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.25rem 0.7rem;
+  background-color: var(--gula-maroon);
+  color: var(--gula-cream);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.capa-cards hr {
+  border-top: 1px dotted var(--gula-ink);
+  opacity: 0.5;
+}
+
+.capa-cards .recipe-card-meta {
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+
+.capa-abrir {
+  display: inline-block;
+  margin-top: 0.75rem;
+  border-bottom: 2px solid var(--gula-maroon-hi);
+  color: var(--gula-maroon-hi);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cta-citacao {
+  border-radius: 0;
+}
+
+.cta-citacao .cta-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.cta-nota {
+  max-width: 260px;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--gula-cream-2);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .cta-nota {
+    max-width: none;
+    padding-left: 0;
+    padding-top: 1rem;
+    border-left: 0;
+    border-top: 1px solid var(--gula-cream-2);
+  }
+}
+
+.footer-barra {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+/* logos viram branco para casar com o rodape escuro */
+.footer-selo {
+  height: 46px;
+  width: auto;
+  opacity: 0.85;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s ease;
+}
+
+.footer-selo:hover {
+  opacity: 1;
+}
