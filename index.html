@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gula</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico?v=3">
+  <link rel="icon" type="image/png" href="img/favicon.png?v=3">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="esqueleto/esqueleto.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+    <div class="topbar">
+      <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between">
+        <span>Revista digital de receitas</span>
+        <span id="edicao">Edição de setembro</span>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-gula">
+      <div class="container-fluid px-4 px-lg-5">
+
+        <a class="navbar-brand" href="index.html">Gula</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navGula"
+                aria-controls="navGula" aria-expanded="false"
+                aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navGula">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Capa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="receitasDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Receitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="receitasDropdown">
+                <li><a class="dropdown-item" href="Salgados/salgados.html">Salgadas</a></li>
+                <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+                <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bar.html">Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="colunas.html">Colunas</a>
+            </li>
+          </ul>
+
+          <!-- Seção atual: doces, salgados, página inicial, drinks -->
+          <span class="navbar-text page-context" id="page-context">página inicial</span>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!--Conteudo das páginas-->
+  <main id="conteudo">
+
+    <section class="capa-masthead text-center">
+      <p class="capa-kicker">cozinha de revista</p>
+      <p class="capa-titulo">Gula</p>
+      <p class="capa-tagline fst-italic">o prazer de cozinhar, página a página</p>
+    </section>
+
+    <section class="capa-hero container-fluid px-4 px-lg-5 pb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <div class="capa-foto" role="img" aria-label="Moqueca de banana-da-terra em panela de barro">
+            <span class="capa-selo">Prato de capa</span>
+            <span class="capa-legenda">[Foto: moqueca de banana-da-terra em panela de barro]</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <p class="capa-kicker">receitas salgadas</p>
+          <h1>Moqueca de banana-da-terra</h1>
+          <p class="capa-lead fst-italic">Dendê, leite de coco e a doçura da banana madura numa panela de barro que chega fumegando à mesa.</p>
+          <p>O truque está em selar a banana antes do caldo, para que ela segure a forma e solte açúcar aos poucos. Serve quatro pessoas e pede arroz branco soltinho ao lado.</p>
+          <div class="capa-meta d-flex flex-wrap gap-4 py-3 my-3">
+            <div><span class="capa-meta-label">Preparo</span><span class="capa-meta-valor">50 min</span></div>
+            <div><span class="capa-meta-label">Dificuldade</span><span class="capa-meta-valor">média</span></div>
+            <div><span class="capa-meta-label">Rende</span><span class="capa-meta-valor">4 porções</span></div>
+          </div>
+          <a href="Salgados/salgados.html" class="btn btn-capa">Ver a receita completa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-4 px-lg-5 pb-5">
+      <hr class="capa-regua">
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-4">
+        <h2 class="capa-secao-titulo mb-0">Nesta edição</h2>
+        <span class="capa-nota">uma receita de cada seção</span>
+      </div>
+
+      <div class="capa-cards row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <a href="Salgados/salgados.html" class="card recipe-card h-100 text-decoration-none" style="--card-accent: #8e3a24;">
+            <div class="recipe-card-img"><span class="capa-tag">Salgadas</span></div>
+            <div class="card-body">
+              <h5 class="card-title recipe-card-title">Bolinho de bacalhau da vovó</h5>
+              <p class="card-text">Dois garfos, batata bem seca e óleo no ponto certo: a receita de sempre, sem atalhos.</p>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <span class="recipe-card-meta">40 min</span>
+                <span class="recipe-card-meta">dificuldade média</span>
+              </div>
+              <span class="capa-abrir">Abrir a receita</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="doces.html" class="card recipe-card h-100 text-decoration-none" style="--card-accent: #b6544f;">
+            <div class="recipe-card-img"><span class="capa-tag">Doces</span></div>
+            <div class="card-body">
+              <h5 class="card-title recipe-card-title">Bolo de fubá cremoso</h5>
+              <p class="card-text">Sai do forno com a casquinha dourada e o meio ainda tremendo, do jeito que tem que ser.</p>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <span class="recipe-card-meta">55 min</span>
+                <span class="recipe-card-meta">dificuldade fácil</span>
+              </div>
+              <span class="capa-abrir">Abrir a receita</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="bar.html" class="card recipe-card h-100 text-decoration-none" style="--card-accent: #33161f;">
+            <div class="recipe-card-img"><span class="capa-tag">Drinks</span></div>
+            <div class="card-body">
+              <h5 class="card-title recipe-card-title">Caipirinha de tangerina</h5>
+              <p class="card-text">Gelo grosso, cachaça de alambique e a casca torcida na hora por cima do copo.</p>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <span class="recipe-card-meta">5 min</span>
+                <span class="recipe-card-meta">dificuldade fácil</span>
+              </div>
+              <span class="capa-abrir">Abrir a receita</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container-fluid px-4 px-lg-5 pb-5">
+      <div class="cta cta-citacao p-4">
+        <p class="cta-text fst-italic mb-0">Cozinhar é o único jeito honesto de encurtar a distância entre a fome e a memória.</p>
+        <span class="cta-nota">Carta da cozinha, escrita toda quinta por quem está de avental nesta edição.</span>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer-gula">
+    <div class="container-fluid px-4 px-lg-5 footer-barra d-flex flex-column flex-sm-row justify-content-between align-items-center gap-4">
+      <div class="text-center text-sm-start">
+        <span class="footer-logo">Gula</span>
+        <span class="footer-text d-block">Revista digital de receitas</span>
+      </div>
+      <div class="d-flex align-items-center gap-4">
+        <img class="footer-selo" src="img/uff.svg" alt="Universidade Federal Fluminense">
+        <img class="footer-selo" src="img/ic-uff.png" alt="Instituto de Computação">
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="esqueleto/esqueleto.js"></script>
+</body>
+</html>
