@@ -163,6 +163,30 @@ main#conteudo {
     }
 }
 
+/* faixa e botão no estilo da capa, compartilhados entre as páginas */
+.cta-citacao {
+  border-radius: 0;
+}
+
+.cta-citacao .cta-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.btn-capa {
+  background-color: var(--gula-maroon);
+  color: var(--gula-cream);
+  border-radius: 0;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 5px 5px 0 var(--gula-gold);
+}
+
+.btn-capa:hover {
+  background-color: var(--gula-maroon-hi);
+  color: var(--gula-cream);
+}
+
 /* ---------- rodapé ---------- */
 .footer-gula {
   flex-shrink: 0;
@@ -180,6 +204,24 @@ main#conteudo {
 .footer-gula .footer-text {
   font-size: 0.85rem;
   color: var(--gula-cream-2);
+}
+
+.footer-barra {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+/* logos viram branco para casar com o rodape escuro */
+.footer-selo {
+  height: 46px;
+  width: auto;
+  opacity: 0.85;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s ease;
+}
+
+.footer-selo:hover {
+  opacity: 1;
 }
 
 /* ---------- tipografia de títulos, para uso das páginas de conteúdo ---------- */
@@ -261,6 +303,12 @@ h1, h2, h3, .titulo-secao {
   background-color: var(--card-accent);
 }
 
+/* quando é foto, recorta para preencher sem distorcer */
+img.recipe-card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .recipe-card-meta {
   font-weight: 500;
   font-size: 0.85rem;
@@ -272,4 +320,13 @@ h1, h2, h3, .titulo-secao {
   font-family: var(--font-display);
   font-weight: 700;
   color: var(--gula-maroon);
+}
+
+.recipe-empty {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.title-page {
+  font-size: 3rem;
 }

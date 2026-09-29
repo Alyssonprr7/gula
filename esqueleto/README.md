@@ -6,26 +6,48 @@ página. Só HTML + CSS + JS, com Bootstrap via CDN.
 
 ## Arquivos
 
-- `index.html` — modelo da página. Duplique este arquivo para cada página
-  (`salgadas.html`, `doces.html`, `drinks.html`, `bar.html`, `colunas.html`...).
-- `css/style.css` — paleta de cores, tipografia e estilos do header/footer.
+- `esqueleto/esqueleto.html` — modelo da página. Duplique este arquivo na
+  raiz do projeto para cada página (`salgados.html`, `doces.html`,
+  `drinks.html`, `bar.html`, `colunas.html`...).
+- `esqueleto/esqueleto.css` — paleta de cores, tipografia e estilos comuns
+  (header, rodapé, faixa, botões, filtro e cards de receita).
   Não precisa mexer aqui para montar o conteúdo de uma página.
-- `js/script.js` — reservado para JS realmente global. O menu hambúrguer e o
-  dropdown já funcionam sozinhos (componentes do Bootstrap).
+- `esqueleto/esqueleto.js` — JS comum a todas as páginas. Monta o rodapé
+  (veja abaixo). O menu hambúrguer e o dropdown já funcionam sozinhos
+  (componentes do Bootstrap).
+- `css/style.css` — estilos exclusivos da capa (`index.html`).
 
 ## Como cada colega deve usar
 
-1. Copie `index.html` com o nome da página (ex.: `doces.html`).
+1. Copie `esqueleto/esqueleto.html` para a raiz com o nome da página
+   (ex.: `doces.html`).
 2. **Não mexa** no `<header>` nem no `<footer>` — é o esqueleto comum.
 3. Dentro de `<main id="conteudo">`, apague o placeholder e cole o conteúdo
    da página (título da seção, filtros, cards de receita, banner etc.).
 4. Se a página tiver um JS próprio (ex.: filtro de busca), crie um arquivo
    separado (ex.: `js/doces.js`) e importe-o no fim do `body`, depois do
-   `script.js`.
+   `esqueleto/esqueleto.js`. Exemplo pronto: `js/salgados.js`.
 5. Atualize o texto do `<span id="page-context">` na navbar para refletir a
    seção atual (ex.: "seção de doces", "seção de salgados").
 
-## Paleta (definida em `css/style.css`)
+## Rodapé
+
+O rodapé é escrito uma única vez, em `esqueleto/esqueleto.js`. Cada página
+tem só a tag vazia:
+
+```html
+<footer class="footer-gula" id="footer"></footer>
+```
+
+Ao carregar a página, o script preenche essa tag com o logo, o texto e os
+selos da UFF. Para mudar o rodapé do site inteiro, edite apenas o
+`esqueleto/esqueleto.js`. Funciona abrindo o arquivo direto no navegador,
+sem precisar de servidor.
+
+Como os caminhos das imagens do rodapé (`img/...`) são relativos, as páginas
+devem ficar na raiz do projeto.
+
+## Paleta (definida em `esqueleto/esqueleto.css`)
 
 | Variável            | Uso                                   |
 |---------------------|----------------------------------------|
