@@ -12,9 +12,9 @@ página. Só HTML + CSS + JS, com Bootstrap via CDN.
 - `esqueleto/esqueleto.css` — paleta de cores, tipografia e estilos comuns
   (header, rodapé, faixa, botões, filtro e cards de receita).
   Não precisa mexer aqui para montar o conteúdo de uma página.
-- `esqueleto/esqueleto.js` — JS comum a todas as páginas. Monta o rodapé
-  (veja abaixo). O menu hambúrguer e o dropdown já funcionam sozinhos
-  (componentes do Bootstrap).
+- `esqueleto/esqueleto.js` — JS comum a todas as páginas. Monta o
+  cabeçalho e o rodapé (veja abaixo). O menu hambúrguer e o dropdown
+  funcionam sozinhos (componentes do Bootstrap).
 - `css/style.css` — estilos exclusivos da capa (`index.html`).
 
 ## Como cada colega deve usar
@@ -27,8 +27,22 @@ página. Só HTML + CSS + JS, com Bootstrap via CDN.
 4. Se a página tiver um JS próprio (ex.: filtro de busca), crie um arquivo
    separado (ex.: `js/doces.js`) e importe-o no fim do `body`, depois do
    `esqueleto/esqueleto.js`. Exemplo pronto: `js/salgados.js`.
-5. Atualize o texto do `<span id="page-context">` na navbar para refletir a
-   seção atual (ex.: "seção de doces", "seção de salgados").
+5. Ajuste o `data-secao` do `<header>` para refletir a seção atual
+   (ex.: "seção de doces", "seção de salgados").
+
+## Cabeçalho (menu)
+
+O cabeçalho (barra superior + navbar) é escrito uma única vez, em
+`esqueleto/esqueleto.js`. Cada página tem só a tag vazia:
+
+```html
+<header id="header" data-secao="seção de doces"></header>
+```
+
+O script preenche a tag, escreve o `data-secao` como texto da seção atual
+na navbar e destaca automaticamente o link da página aberta. Para adicionar
+ou mudar um link do menu no site inteiro, edite apenas o
+`esqueleto/esqueleto.js`.
 
 ## Rodapé
 

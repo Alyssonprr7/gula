@@ -18,57 +18,7 @@
 
 <body>
 
-    <header>
-    <div class="topbar">
-      <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between">
-        <span>Revista digital de receitas</span>
-        <span id="edicao">Edição de setembro</span>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-gula">
-      <div class="container-fluid px-4 px-lg-5">
-
-        <a class="navbar-brand" href="index.html">Gula</a>
-
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navGula"
-                aria-controls="navGula" aria-expanded="false"
-                aria-label="Alternar navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navGula">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html" aria-current="page">Capa</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="receitasDropdown"
-                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Receitas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="receitasDropdown">
-                <li><a class="dropdown-item" href="salgados.html">Salgadas</a></li>
-                <li><a class="dropdown-item" href="doces.html">Doces</a></li>
-                <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bar.html">Bar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="colunas.html">Colunas</a>
-            </li>
-          </ul>
-
-          <!-- Seção atual: doces, salgados, página inicial, drinks -->
-          <span class="navbar-text page-context" id="page-context">página inicial</span>
-        </div>
-
-      </div>
-    </nav>
-  </header>
+  <header id="header" data-secao="página inicial"></header>
 
   <!--Conteudo das páginas-->
   <main id="conteudo">
