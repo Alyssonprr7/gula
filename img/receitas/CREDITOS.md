@@ -2,6 +2,15 @@
 
 Fotos do Wikimedia Commons, reduzidas para 800px.
 
+As fotos da página de doces têm 960px e são exibidas com recorte nos cartões:
+
+- `bolo-fuba.jpg` — Wilfredor, [CC0](https://creativecommons.org/publicdomain/zero/1.0/) — https://commons.wikimedia.org/wiki/File:Bolo_de_Fub%C3%A1.jpg
+- `pudim-leite.jpg` — Josef Schober, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) — https://commons.wikimedia.org/wiki/File:Pudim_de_Leite.jpg
+- `brigadeiro.jpg` — Mayra (Maych), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) — https://commons.wikimedia.org/wiki/File:Brigadeiro.jpg
+- `torta-limao.jpg` — Fabiobarros, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — https://commons.wikimedia.org/wiki/File:Torta_de_limao.jpg
+
+Fotos das outras seções:
+
 - `coxinha.jpg` — Sintegrity, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Coxinha_-_iguaria_brasileira_01.jpg
 - `pao-de-queijo.jpg` — Murilo manzini, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Cheesebread.jpg
 - `moqueca-banana.jpg` — Sintegrity, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Moqueca_de_Banana_de_Vit%C3%B3ria_4.jpg
