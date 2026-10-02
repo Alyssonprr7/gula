@@ -299,7 +299,7 @@ h1, h2, h3, .titulo-secao {
 }
 
 .recipe-card-img {
-  height: 180px;
+  height: 300px;
   background-color: var(--card-accent);
 }
 
