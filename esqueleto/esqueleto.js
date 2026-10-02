@@ -49,7 +49,7 @@ if (header) {
               <ul class="dropdown-menu" aria-labelledby="receitasDropdown">
                 <li><a class="dropdown-item" href="salgados.html">Salgadas</a></li>
                 <li><a class="dropdown-item" href="doces.html">Doces</a></li>
-                <li><a class="dropdown-item" href="drinks.html">Drinks</a></li>
+                <li><a class="dropdown-item" href="bar.html">Drinks</a></li>
               </ul>
             </li>
             <li class="nav-item">
