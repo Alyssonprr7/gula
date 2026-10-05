@@ -38,9 +38,6 @@ if (header) {
 
         <div class="collapse navbar-collapse" id="navGula">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Capa</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="receitasDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,12 +48,6 @@ if (header) {
                 <li><a class="dropdown-item" href="doces.html">Doces</a></li>
                 <li><a class="dropdown-item" href="bar.html">Drinks</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bar.html">Bar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="colunas.html">Colunas</a>
             </li>
           </ul>
 
